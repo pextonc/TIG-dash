@@ -1,0 +1,57 @@
+<!-- Your .cshtml -->
+
+@section Scripts {
+	<script>
+		$(document).ready(function () {
+			function requestCallsActiveData() {
+				$.get("/C#_file_dir/UcmJsonCallsActive", function (data) { 
+					if (data) {
+						var callsActiveContainer = $("#callsActiveContainer");
+						var totalCallsActiveContainer = $("#totalCallsActiveContainer");
+						callsActiveContainer.empty(); // Clear container before appending new data
+						var totalCallsActive = 0;
+
+						data.forEach(function (item) {
+							var callsActiveValue = parseInt(item.callsActive);
+							totalCallsActive += callsActiveValue;
+							var nodeName = item.node;
+							callsActiveContainer.append("<p>" + nodeName + ": " + callsActiveValue + "</p>");
+					    });
+
+						totalCallsActiveContainer.html("<p>TOTAL: " + totalCallsActive + "</p>");
+
+					} else {
+						$("#emptyDiv").html("Data structure is not as expected.");
+					}
+				});
+	        }
+		
+		}
+		requestCallsActiveData();
+		setInterval(requestCallsActiveData, 15000); //Every 15 seconds
+    );
+    </script>
+}
+
+<!-- Your .cshtml -->
+
+<div class="row">
+
+	<div class="col">
+		<div id="panel-1" class="panel">
+			<div class="panel-hdr"> 
+				<h2>
+					CALLS ACTIVE
+				</h2>
+                <div id="totalCallsActiveContainer" style="margin-right: 40px;"></div>
+			</div>																												
+            <div id="emptyDiv"></div>
+            <div id="callsActiveContainer"></div>
+            <div id="jsonDataContainer">
+            <!--JSON data will be displayed here -->
+            </div>													                            																			    		    			
+		</div>
+    </div>
+</div>
+
+<!-- Your .cshtml -->
