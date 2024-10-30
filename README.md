@@ -1,11 +1,11 @@
-# TIG-dash: Add-on ASP.NET Core MVC Snippets for Querying InfluxDB
+# TIG-dash: ASP.NET Core MVC Snippets for Querying InfluxDB
 ASP.NET Core MVC snippets to query InfluxDB from a TIG stack, providing an additional dashboard option. Originally designed for Cisco Call Manager performance monitoring, but adaptable for other use cases.
 
 ![TIG-dash diagram](https://github.com/user-attachments/assets/c4e9f927-7237-49f1-ae3f-98716d887f11)
 ![Sample](https://github.com/user-attachments/assets/a2cdd517-f217-48e9-8db2-6a4e00c4ddb7)
 
 ## Overview
-**TIG-dash** provides essential ASP.NET Core MVC code snippets designed to query InfluxDB from a TIG stack. These snippets offer an additional dashboard option to a TIG stack, and can be integrated into existing .NET applications. This solution is particularly aimed at Cisco Call Manager performance monitoring, but can be adapted for any TIG stack or InfluxDB setup. Originally built as an addon for an existing GitHub Repo from sieteunoseis - https://github.com/sieteunoseis/cucm_tig_dashboard_ubuntu
+**TIG-dash** offers an additional dashboard option to a TIG stack, and can be integrated into existing .NET applications. The repo is particularly aimed at Cisco Call Manager performance monitoring, but can be adapted for any TIG stack or InfluxDB setup. Originally built as an addon solution for an existing GitHub Repo from sieteunoseis - https://github.com/sieteunoseis/cucm_tig_dashboard_ubuntu
 
 ## Features
 - **Essential Code Snippets**: Includes C# controller logic, jQuery logic in the views, and the model, allowing for easy integration into your own .NET pages or apps.
