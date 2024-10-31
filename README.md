@@ -1,8 +1,9 @@
 # TIG-dash: ASP.NET Core MVC Snippets for Querying InfluxDB
 ASP.NET Core MVC snippets to query InfluxDB from a TIG stack, providing an additional dashboard option. Originally designed for Cisco Call Manager performance monitoring, but adaptable for other use cases.
 
-![TIG-dash diagram](https://github.com/user-attachments/assets/c4e9f927-7237-49f1-ae3f-98716d887f11)
-![Sample](https://github.com/user-attachments/assets/a2cdd517-f217-48e9-8db2-6a4e00c4ddb7)
+![TIG-dash diagram](https://github.com/user-attachments/assets/cb8b13e3-36df-4809-83d1-ee64bb448aa9)
+![Sample](https://github.com/user-attachments/assets/ee4e33b7-7e64-4dc1-b295-01d98a937cee)
+
 
 ## Overview
 **TIG-dash** offers an additional dashboard option to a TIG stack, and can be integrated into existing .NET applications. The repo is particularly aimed at Cisco Call Manager performance monitoring, but can be adapted for any TIG stack or InfluxDB setup. Originally built as an addon solution for an existing GitHub Repo from sieteunoseis - https://github.com/sieteunoseis/cucm_tig_dashboard_ubuntu
@@ -12,8 +13,7 @@ ASP.NET Core MVC snippets to query InfluxDB from a TIG stack, providing an addit
 - **Based on an existing repo for CUCM Performance Monitoring**: Pre-built to target TIG stack OVA image for Cisco Call Manager performance monitoring. See 'Overview'.
 
 ## Prerequisites
-- **ASP.NET Core 3.1**
-- **ASP.NET Core MVC Environment**
+- **ASP.NET Core MVC Environment (original solution was built on ASP.NET Core 3.1)**
 - **Pre-configured TIG Stack**: Ensure you have a working TIG stack with at least Telegraf and InfluxDB configured.
 
 ## Installation
