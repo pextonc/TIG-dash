@@ -19,7 +19,7 @@ ASP.NET Core MVC snippets to query InfluxDB from a TIG stack, providing an addit
 ## Installation
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/TIG-dash.git
+    git clone https://github.com/pextonc/TIG-dash.git
     ```
 2. **Add the Files to Your Project**:
     - Copy the model, view, and controller files into your existing ASP.NET Core MVC project.
